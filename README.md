@@ -48,6 +48,7 @@ replace guesses with evidence — safely.
 - [ ] Head-unit CPU/SoC confirmed
 - [ ] Update-package format understood
 - [ ] Any safe code-execution path identified (none so far — published source is libraries only)
+- [x] MirrorLink path inspected — see `docs/mirrorlink.md` (Touch 2 = MirrorLink 1.0, Android <4.3 phones only, USB mirror; **not** usable from the Xiaomi 13T)
 - [ ] Phone-side prototype built
 
 **Key result so far:** the unit almost certainly runs embedded Linux, but the

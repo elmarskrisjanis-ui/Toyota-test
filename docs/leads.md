@@ -15,8 +15,11 @@
   https://www.toyotaownersclub.com/forums/topic/211605-modifying-touch-2-updates/
 - Toyota Owners Club — Touch 2 technical discussion:
   https://www.toyotaownersclub.com/forums/topic/189515-technicaltouch2-and-touch2-andwith-go/
-- MirrorLink experiment with Toyota Touch 2:
+- MirrorLink experiment with Toyota Touch 2 ✅ **read — see `docs/mirrorlink.md`**:
   https://shafr.github.io/life/2021/08/02/toyota-touch-2-mirrorlink.html
+  Summary: Touch 2 = MirrorLink **1.0 only** → works only with Android <4.3
+  phones (Galaxy S3, Nokia N8/N9), over **USB**, as full-screen mirroring. Waze
+  mirrors fine from such a phone. **Not** usable from the Xiaomi 13T.
 
 ## Official
 
