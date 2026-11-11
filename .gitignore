@@ -1,0 +1,5 @@
+oss/
+*.tar.gz
+*.zip
+*.bin
+*.img
