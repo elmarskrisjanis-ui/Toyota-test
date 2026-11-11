@@ -40,7 +40,25 @@ replace guesses with evidence — safely.
 - [`docs/safety.md`](docs/safety.md) — the rules that keep the car intact.
 - [`docs/leads.md`](docs/leads.md) — external references to confirm.
 
-## Current status
+## Conclusion (option 4 closed — 2026-11-11)
+
+The read-only firmware/MirrorLink investigation is complete, and the answer is
+**no**: this Toyota Touch 2 (`13TFDAEU-DA07`, sw `0101B9`) **cannot run Android
+apps or custom code**, and cannot show a custom Waze/Spotify/WhatsApp dashboard
+driven by the Xiaomi 13T.
+
+- The unit runs **embedded Linux**, but Panasonic publishes **libraries only** —
+  no UI, bootloader, or app launcher — so there is **no path to run custom code**.
+- **MirrorLink** is **1.0-only** on Touch 2 → works solely with **Android <4.3
+  phones over USB** as full-screen mirroring; the modern 13T cannot drive it.
+- Bluetooth carries audio + track metadata only, never arbitrary graphics.
+
+The only no-modification way to get Waze onto the factory screen is MirrorLink
+mirroring **from an old Android <4.3 phone (e.g. Galaxy S3) over USB** — not the
+13T, and not a custom interface. Anything closer to the original goal requires a
+hardware change (aftermarket/Android-Auto head unit), which was out of scope.
+
+## Status history
 
 - [x] Hardware/software identifiers recorded
 - [x] Panasonic OSS archive downloaded & inventoried (`asound.zip` = alsa-lib)
