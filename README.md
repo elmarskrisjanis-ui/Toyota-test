@@ -43,9 +43,14 @@ replace guesses with evidence — safely.
 ## Current status
 
 - [x] Hardware/software identifiers recorded
-- [ ] Panasonic OSS archive downloaded (blocked: external network access)
-- [ ] OSS archive inventoried
-- [ ] Head-unit OS/CPU confirmed from evidence
+- [x] Panasonic OSS archive downloaded & inventoried (`asound.zip` = alsa-lib)
+- [x] Head-unit OS inferred from evidence: **embedded Linux** (ships ALSA) — see `docs/findings.md`
+- [ ] Head-unit CPU/SoC confirmed
 - [ ] Update-package format understood
-- [ ] Any safe code-execution path identified
+- [ ] Any safe code-execution path identified (none so far — published source is libraries only)
 - [ ] Phone-side prototype built
+
+**Key result so far:** the unit almost certainly runs embedded Linux, but the
+published open-source is *libraries only* — no UI, bootloader, or app launcher —
+so it provides **no path to run custom code**. Linux underneath ≠ able to
+install apps.

@@ -11,10 +11,22 @@ Toyota/Panasonic infotainment system, UI, bootloader, or firmware.
 
 ## Status in this session
 
-⚠️ **Blocked:** outbound network to `car.panasonic.jp` is not allowed in this
-cloud session, so the archive could not be downloaded here. To fetch it,
-`car.panasonic.jp` must be added to the environment's allowed network hosts, or
-download it manually and place it in `oss/` (git-ignored, see below).
+✅ **Fetched & inventoried (2026-11-11).** `https://car.panasonic.jp/oss/c01vvt13/`
+loaded (HTTP 200). The page is a compliance notice; the **only source download
+offered is `asound.zip`** (the LGPL component).
+
+What it is: **alsa-lib** (ALSA user-space sound library) — 20 C files under
+`pcm/`, `mixer/`, `control/`, `pcm/plugin/`, header `asoundlib.h`,
+`SND_LIB_VERSION` ~0.5.2 (an old ~2001 release). ALSA is **Linux-specific**, so
+this is strong evidence the unit runs embedded Linux.
+
+The category-(4) list is a large body of OpenSSL / ISC / MIT / BSD (NetBSD,
+OpenBSD: ppp, IPv6CP, pf, ALTQ) notices — a typical embedded Linux networking/
+crypto stack.
+
+**Not present in the archive:** any UI, bootloader, init system, application
+launcher, or signing keys. So it explains the *platform*, not a way to run apps.
+`asound.zip` is saved under `oss/` locally (git-ignored).
 
 ## How to fetch (manual, when you can reach the site)
 
